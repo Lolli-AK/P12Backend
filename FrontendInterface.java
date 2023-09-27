@@ -1,7 +1,16 @@
+import java.util.Scanner
+
 /**
  * This interface shows the methods needed to create a movie timer app.
  */
 public interface FrontendInterface {
+
+    /**
+     * @param backend the reference to the backend.
+     * @param scnr scanner to take user input.
+     */
+    // FrontendInterface(Object backend, Scanner scnr);
+
     /**
      * Command loop for the main menu.
      */
@@ -20,12 +29,12 @@ public interface FrontendInterface {
     /**
      * Command loop for finding a list of movies between two runtimes.
      */
-    public void returnListOfMovies();
+    public void findListOfMoviesCommandLoop();
 
     /**
-     * Command loop for exiting the app.
+     * Exits the app.
      */
-    public void exitAppCommandLoop();
+    public void exitApp();
 
     /**
      * Initializes the dataset for this program to use.
@@ -35,31 +44,22 @@ public interface FrontendInterface {
     public void loadData(String dataFile);
 
     /**
-     * This method finds the movie with the shortest run time in the dataset and returns it.
+     * This method finds and returns the movies with the shortest run time in the dataset.
      *
-     * @return Returns the title of the movie with the shortest run time.
+     * @return a string with the list of titles of the movies with the shortest run time.
      */
-    public String findShortestMovie();
+    public String findShortestMovies();
 
     /**
-     * Finds all the movies between two run time lengths given by the user and returns them.
+     * Finds all the movies between two run-time lengths given by the user and returns them.
      *
-     * @param lowerBound the minimum run time a movie should have that will be returned by the
-     * program.
-     * @param upperBound the minimum run time a movie should have that will be returned by the
-     * program.
-     * @return an array of movies with runtimes between lowerBound and upperBound.
+     * @param lowerBound the minimum run-time a movie should have that will be returned by the
+     *        program.
+     * @param upperBound the minimum run-time a movie should have that will be returned by the
+     *        program.
+     * @return a string with the list of titles of the movies with run-times between lowerBound
+               and upperBound.
      */
-    public String[] returnListOfMovies(int lowerBound, int upperBound);
+    public String findListOfMovies(int lowerBound, int upperBound);
 
-    /**
-     * Allows the user to exit the app.
-     */
-    public void exitApp();
-
-    //This is an example of a possible constructor for the Movie Timer App.
-    /**
-     * MovieTimerConstuctor(Object backend, Scanner scanner);
-     *
-     */
- }
+}
