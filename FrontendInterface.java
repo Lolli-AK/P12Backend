@@ -1,7 +1,7 @@
 /**
  * This interface shows the methods needed to create a movie timer app.
  */
-public interface IndividualBackendInterface {
+public interface FrontendInterface {
     /**
      * Command loop for the main menu.
      */
