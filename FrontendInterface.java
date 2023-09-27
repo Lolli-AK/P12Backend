@@ -1,4 +1,4 @@
-import java.util.Scanner
+import java.util.Scanner;
 
 /**
  * This interface shows the methods needed to create a movie timer app.
