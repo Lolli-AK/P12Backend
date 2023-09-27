@@ -1,3 +1,4 @@
+import java.io.File;
 public interface BackendInterface {
     /* Constructor for interface:
      * public BackendInterface (String filePath){
@@ -11,9 +12,9 @@ public interface BackendInterface {
 
     /**
      * Reads data from a given CSV file
-     * @param filePath The path to the CSV file
+     * @param file is the CSV file
      */
-    void readFile(String filePath);
+    void readFile(File file);
     /**
      * Gives a list of the movies with the minimum duration
      * @param min The minimum duration
