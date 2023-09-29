@@ -1,8 +1,8 @@
 import java.io.File;
 public interface BackendInterface {
     /* Constructor for interface:
-     * public BackendInterface (String filePath){
-     * this.filePath = filePath;
+     * public BackendInterface (String file){
+     * this.file = file;
      * this.min = min;
      * this.max = max;
      * }
