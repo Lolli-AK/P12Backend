@@ -1,7 +1,7 @@
 import java.io.File;
 public interface BackendInterface {
     /* Constructor for interface:
-     * public BackendInterface (String file){
+     * public BackendInterface (String file, int min, int max){
      * this.file = file;
      * this.min = min;
      * this.max = max;
