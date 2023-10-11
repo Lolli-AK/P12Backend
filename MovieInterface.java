@@ -1,4 +1,4 @@
-public interface MovieInterface extends Comparable{
+public interface MovieInterface extends Comparable <Movie>{
      /*   Constructor for interface:
       *   public Movie (String title, String genre, int year, String country, int duration) {
       *   this.title = title;
