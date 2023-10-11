@@ -1,10 +1,12 @@
 import java.io.File;
 public interface BackendInterface {
     /* Constructor for interface:
-     * public BackendInterface (String file, int min, int max){
+     * public BackendInterface (String file, int min, int max,
+     * IterableMultiKeySortedCollectionInterface rbt){
      * this.file = file;
      * this.min = min;
      * this.max = max;
+     * this.rbt = rbt;
      * }
      **/
 
